@@ -39,24 +39,31 @@
               rows="8"
               class="border border-borderGreen rounded-lg px-2 py-4 w-full"
               style="resize: none"
+              id="promptText"
             >
             </textarea>
             <span class="absolute bottom-3 left-3"
               ><a href="#"><img src="img/microphone.svg" class="w-4" /></a
             ></span>
-            <span class="absolute bottom-3 right-3"
-              ><a href="#"><img src="img/play.svg" class="w-4" /></a
+            <span class="absolute bottom-3 right-3" id="playButton"
+              ><a href="#" id="submitTextLink"
+                ><img src="img/play.svg" class="w-4" /></a
             ></span>
+            <span class="absolute bottom-3 right-3 hidden" id="loadingButton"
+              ><img src="img/loading.svg" class="w-4"
+            /></span>
           </div>
           <div class="w-full relative">
             <textarea
               rows="8"
               class="border border-borderGreen rounded-lg px-2 py-4 w-full"
               style="resize: none"
+              id="excelText"
             >
             </textarea>
             <span class="absolute bottom-3 right-3"
-              ><a href="#"><img src="img/copy.svg" class="w-6" /></a
+              ><a href="#" id="copyExcelFormula"
+                ><img src="img/copy.svg" class="w-6" /></a
             ></span>
           </div>
         </div>
@@ -64,5 +71,5 @@
     </div>
   </body>
 
-  <script src="" async defer></script>
+  <script src="scripts/main.js" async defer></script>
 </html>
